@@ -155,15 +155,6 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
-      {
-        test: /\.(js|jsx)$/,
-        include: paths.appSrc,
-        loader: require.resolve('webpack-atomizer-loader'),
-        options: {
-          configPath: __dirname + '/atomicCssConfig.js',
-          rules: __dirname + '/atomicRuleCustom.js'
-        },
-      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
