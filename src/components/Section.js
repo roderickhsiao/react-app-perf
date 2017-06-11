@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
-class Section extends PureComponent {
+class Section extends Component {
   render() {
     return (
       <div className="section My(10px)">

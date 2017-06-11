@@ -1,17 +1,11 @@
 .Bdbc\(\#000\.12\) {
   border-bottom-color: rgba(0,0,0,.12);
 }
-.Bgc\(\#\#fafafa\), .Bgc\(\#fafafa\) {
-  background-color: #fafafa;
-}
 .Bgc\(\#000\.12\)\:h:hover {
   background-color: rgba(0,0,0,.12);
 }
 .Bgc\(\#263238\) {
   background-color: #263238;
-}
-.Bgc\(\#795548\) {
-  background-color: #795548;
 }
 .C\(\#000\.87\) {
   color: rgba(0,0,0,.87);
@@ -24,6 +18,9 @@
 }
 .Cur\(p\) {
   cursor: pointer;
+}
+.D\(b\) {
+  display: block;
 }
 .D\(f\) {
   display: flex;
@@ -40,20 +37,14 @@
 .Fw\(n\) {
   font-weight: normal;
 }
-.Fz\(\.8rem\) {
-  font-size: .8rem;
-}
 .Fz\(\.9rem\) {
   font-size: .9rem;
-}
-.Fz\(1\.1rem\) {
-  font-size: 1.1rem;
 }
 .Fz\(1\.2rem\) {
   font-size: 1.2rem;
 }
-.Fz\(1\.3rem\) {
-  font-size: 1.3rem;
+.Fs\(i\) {
+  font-style: italic;
 }
 .H\(0\) {
   height: 0;
@@ -74,12 +65,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.My\(1em\) {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 .Mb\(-1px\) {
   margin-bottom: -1px;
+}
+.Maw\(400px\) {
+  max-width: 400px;
 }
 .P\(0\) {
   padding: 0;
@@ -99,14 +89,6 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.Py\(20px\) {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.Py\(40px\) {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .Ta\(c\) {
   text-align: center;
 }
@@ -115,6 +97,9 @@
 }
 .Trsdu\(\.3s\) {
   transition-duration: .3s;
+}
+.W\(100\%\) {
+  width: 100%;
 }
 .BdB {
   border-top-width: 0;

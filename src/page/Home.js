@@ -1,12 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
+
+import PageCanvas from '../components/PageCanvas';
 import Section from '../components/Section';
 
-class Home extends PureComponent {
+class Home extends Component {
   render() {
     return (
-      <div>
-        <h1 className="C(#00897b) Fz(1.2rem) Fw(n)">A simple App to show cases different performance related topics</h1>
-        <div className="C(#000.87) Fz(.9rem)">
+      <PageCanvas
+        title={'A simple App to show cases different performance related topics'}
+        section={
           <Section
             title={'Credits'}
             content={
@@ -16,8 +18,8 @@ class Home extends PureComponent {
               ]
             }
           />
-        </div>
-      </div>
+        }
+      />
     );
   }
 };

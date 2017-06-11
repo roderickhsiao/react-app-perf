@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 
-class TwoColumnGrid extends PureComponent {
+class TwoColumnGrid extends Component {
   static defaultProps = {
     col1Width: '240px'
   }

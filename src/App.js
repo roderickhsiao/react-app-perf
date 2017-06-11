@@ -16,7 +16,7 @@ class App extends PureComponent {
       <Router>
         <div className="App H(100vh)">
           <div className="App-header P(20px) C(#fff) Bgc(#263238) Ta(c)">
-            <h2>I am a simple app 👋 </h2>
+            <h2>I am a simple app <span role="img" aria-label="wave">👋 </span></h2>
           </div>
           <TwoColumnGrid
             col1={<Nav data={navData}/>}

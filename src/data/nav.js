@@ -1,11 +1,12 @@
 const nav = [
   {
     name: 'home',
-    url: '/'
+    url: '/',
+    exact: true
   },
   {
-    name: 'defer',
-    url: '/defer'
+    name: 'Blocking Assets',
+    url: '/blocking-assets'
   }
 ];
 
