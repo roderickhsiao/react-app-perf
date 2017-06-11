@@ -164,7 +164,8 @@ module.exports = {
         include: paths.appSrc,
         loader: require.resolve('webpack-atomizer-loader'),
         options: {
-          configPath: __dirname + '/atomCssConfig.js'
+          configPath: __dirname + '/atomicCssConfig.js',
+          rules: __dirname + '/atomicRuleCustom.js'
         },
       },
       // Process JS with Babel.

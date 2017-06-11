@@ -7,18 +7,17 @@ class BlockingAssets extends Component {
   render() {
     return (
       <PageCanvas
-        title="Load an image using <img> tag"
+        title="Load an image using background image"
         section={
           <Section
-            title="Loading an image (disable overflow anchor)"
+            title="Loading an image via background image"
             content={[
-              <div className="Maw(400px)">
-                <img
-                  className="W(100%) Ova(n)"
-                  alt="puppy"
-                  src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s1080x1080/e15/fr/18809583_812711995553463_3365235085484752896_n.jpg"
-                />
-              </div>,
+              <div
+                className="W(400px) H(300px) Bgz(cv)"
+                style={{
+                  backgroundImage: 'url(https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s1080x1080/e15/fr/18809583_812711995553463_3365235085484752896_n.jpg)'
+                }}
+              />,
               <div className="Maw(600px) C(#000.87)">
                 <p>
                   Lorem ipsum dolor sit amet, duis vulputate per in, vide diceret est eu. Tation facete at sed, quo utroque quaestio philosophia id. Cu summo facilisis iudicabit usu, est cu impetus meliore. Sea erant civibus in, facilis referrentur mediocritatem eu nam. Aeterno deseruisse cotidieque per in, no cum meliore admodum.

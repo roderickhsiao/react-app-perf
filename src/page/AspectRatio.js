@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
+import AspectRatio from 'react-aspect-ratio';
 
 import PageCanvas from '../components/PageCanvas';
 import Section from '../components/Section';
 
-class BlockingAssets extends Component {
+import 'react-aspect-ratio/aspect-ratio.css';
+
+class AspectRatioPage extends Component {
   render() {
     return (
       <PageCanvas
-        title="Load an image using <img> tag"
+        title="Load an image using <img> but prevent browser reflow"
         section={
           <Section
-            title="Loading an image (disable overflow anchor)"
+            title="Loading an image with aspect ratio"
             content={[
-              <div className="Maw(400px)">
+              <AspectRatio className="Maw(400px)" ratio="4/3">
                 <img
-                  className="W(100%) Ova(n)"
                   alt="puppy"
                   src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s1080x1080/e15/fr/18809583_812711995553463_3365235085484752896_n.jpg"
                 />
-              </div>,
+              </AspectRatio>,
               <div className="Maw(600px) C(#000.87)">
                 <p>
                   Lorem ipsum dolor sit amet, duis vulputate per in, vide diceret est eu. Tation facete at sed, quo utroque quaestio philosophia id. Cu summo facilisis iudicabit usu, est cu impetus meliore. Sea erant civibus in, facilis referrentur mediocritatem eu nam. Aeterno deseruisse cotidieque per in, no cum meliore admodum.
@@ -44,4 +46,4 @@ class BlockingAssets extends Component {
   }
 }
 
-export default BlockingAssets;
+export default AspectRatioPage;

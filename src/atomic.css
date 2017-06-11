@@ -7,6 +7,9 @@
 .Bgc\(\#263238\) {
   background-color: #263238;
 }
+.Bgz\(cv\) {
+  background-size: cover;
+}
 .C\(\#000\.87\) {
   color: rgba(0,0,0,.87);
 }
@@ -55,6 +58,9 @@
 .H\(100vh\) {
   height: 100vh;
 }
+.H\(300px\) {
+  height: 300px;
+}
 .List\(n\) {
   list-style-type: none;
 }
@@ -70,6 +76,9 @@
 }
 .Maw\(400px\) {
   max-width: 400px;
+}
+.Maw\(600px\) {
+  max-width: 600px;
 }
 .P\(0\) {
   padding: 0;
@@ -100,6 +109,9 @@
 }
 .W\(100\%\) {
   width: 100%;
+}
+.W\(400px\) {
+  width: 400px;
 }
 .BdB {
   border-top-width: 0;

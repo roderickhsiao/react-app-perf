@@ -5,8 +5,16 @@ const nav = [
     exact: true
   },
   {
-    name: 'Blocking Assets',
-    url: '/blocking-assets'
+    name: 'Image tag',
+    url: '/image-tag'
+  },
+  {
+    name: 'Background image',
+    url: '/background-image'
+  },
+  {
+    name: 'Image tag with aspect ratio',
+    url: '/image-aspect-ratio'
   }
 ];
 
