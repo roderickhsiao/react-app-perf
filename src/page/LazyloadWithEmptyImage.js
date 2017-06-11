@@ -1,26 +1,73 @@
 import React, { Component } from 'react';
-import AspectRatio from 'react-aspect-ratio';
+import raf from 'raf';
 
 import PageCanvas from '../components/PageCanvas';
 import Section from '../components/Section';
+import executeAfterEvent from '../lib/executeAfterEvent';
 
-import 'react-aspect-ratio/aspect-ratio.css';
+const LOAD_STATUS = {
+  INIT: 0,
+  LOADING: 1,
+  LOADED: 2
+};
 
-class AspectRatioPage extends Component {
+class LazyImage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      status: LOAD_STATUS.INIT
+    };
+  }
+  loadImage = () => {
+    executeAfterEvent('load', () => {
+      const image = new Image();
+      image.onload = () => {
+        this.setState({
+          status: LOAD_STATUS.LOADED
+        });
+      };
+      raf(() => {
+        // defer
+        image.src = this.props.src;
+      });
+      this.setState({
+        status: LOAD_STATUS.LOADING
+      });
+    });
+  };
+  componentDidMount() {
+    this.loadImage();
+  }
+  compoentWillReceiveProps() {
+    this.loadImage();
+  }
+  render() {
+    const { src, ...others } = this.props;
+    return (
+      <img
+        {...others}
+        src={this.state.status === LOAD_STATUS.LOADED ? src : ''}
+      />
+    );
+  }
+}
+
+class LazyloadWithEmptyImage extends Component {
   render() {
     return (
       <PageCanvas
-        title="Aspect Ratio"
+        title="Lazyload image"
         section={
           <Section
-            title="Loading an image with aspect ratio to prevent reflow"
+            title="Lazy load with empty image"
             content={[
-              <AspectRatio className="Maw(400px)" ratio="4/3">
-                <img
+              <div className="Maw(400px)">
+                <LazyImage
+                  className="W(100%) Ova(n)"
                   alt="puppy"
                   src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s1080x1080/e15/fr/18809583_812711995553463_3365235085484752896_n.jpg"
                 />
-              </AspectRatio>,
+              </div>,
               <div className="Maw(600px) C(#000.87)">
                 <p>
                   Lorem ipsum dolor sit amet, duis vulputate per in, vide diceret est eu. Tation facete at sed, quo utroque quaestio philosophia id. Cu summo facilisis iudicabit usu, est cu impetus meliore. Sea erant civibus in, facilis referrentur mediocritatem eu nam. Aeterno deseruisse cotidieque per in, no cum meliore admodum.
@@ -46,4 +93,4 @@ class AspectRatioPage extends Component {
   }
 }
 
-export default AspectRatioPage;
+export default LazyloadWithEmptyImage;

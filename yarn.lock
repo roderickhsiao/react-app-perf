@@ -3002,6 +3002,10 @@ interpret@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
 
+intersection-observer@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.2.1.tgz#cb55175f4eebef6436d957a7d1774d39a9248e5e"
+
 invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
@@ -4355,6 +4359,10 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
+performance-now@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
+
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -4800,6 +4808,12 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
+raf@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
+  dependencies:
+    performance-now "^2.1.0"
+
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -4826,7 +4840,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-aspect-ratio@^1.0.10:
+react-aspect-ratio@^1.0.10, react-aspect-ratio@^1.0.3:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/react-aspect-ratio/-/react-aspect-ratio-1.0.10.tgz#14e90644009aa00070f949ce2a2b27fa80720953"
   dependencies:
@@ -4873,6 +4887,20 @@ react-error-overlay@^1.0.7:
     react-dev-utils "^3.0.0"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-in-viewport@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-in-viewport/-/react-in-viewport-0.0.5.tgz#5de6bf8fc01bb0100da235565564769d70e980a0"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+    intersection-observer "^0.2.1"
+
+react-lazy-object@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-lazy-object/-/react-lazy-object-0.0.2.tgz#06d62f8f56ce03a560782e501d93ad95c69898a3"
+  dependencies:
+    react-aspect-ratio "^1.0.3"
+    react-in-viewport "^0.0.5"
 
 react-router-dom@^4.1.1:
   version "4.1.1"

@@ -7,7 +7,7 @@ class BlockingAssets extends Component {
   render() {
     return (
       <PageCanvas
-        title="Load an image using background image"
+        title="Background Image"
         section={
           <Section
             title="Loading an image via background image"

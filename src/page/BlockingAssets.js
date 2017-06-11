@@ -7,10 +7,10 @@ class BlockingAssets extends Component {
   render() {
     return (
       <PageCanvas
-        title="Load an image using <img> tag"
+        title="Image tag"
         section={
           <Section
-            title="Loading an image (disable overflow anchor)"
+            title="Loading an image via img tag (disable overflow anchor)"
             content={[
               <div className="Maw(400px)">
                 <img
