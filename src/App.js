@@ -1,21 +1,27 @@
 import React, { PureComponent } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/Nav';
+import navData from './data/nav';
+import TwoColumnGrid from './components/TwoColumnGrid';
+
+// pages
+import Main from './page/Main';
+
+import './atomic.css';
 
 class App extends PureComponent {
   render() {
     return (
       <Router>
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React</h2>
+        <div className="App H(100vh)">
+          <div className="App-header P(20px) C(#fff) Bgc(#263238) Ta(c)">
+            <h2>I am a simple app 👋 </h2>
           </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <TwoColumnGrid
+            col1={<Nav data={navData}/>}
+            col2={<Main />}
+          />
         </div>
       </Router>
     );
