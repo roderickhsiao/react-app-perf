@@ -8,6 +8,7 @@ import Home from './Home';
 import LazyloadWhenInViewport from './LazyloadWhenInViewport';
 import LazyloadWithEmptyImage from './LazyloadWithEmptyImage';
 import LazyloadWithPixelImage from './LazyloadWithPixelImage';
+import StackingContext from './StackingContext';
 
 class Main extends Component {
   render() {
@@ -29,6 +30,7 @@ class Main extends Component {
           path="/image-lazy-load-when-in-viewport"
           component={LazyloadWhenInViewport}
         />
+        <Route path="/stacking-context" component={StackingContext} />
       </div>
     );
   }

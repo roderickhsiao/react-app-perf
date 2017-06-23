@@ -1,11 +1,83 @@
+.Bd {
+  border-width: 1px;
+}
+.Bd, .BdB {
+  border-style: solid;
+}
+.Bdc\(\#fff\.12\) {
+  border-color: rgba(255,255,255,.12);
+}
+.Bdc\(\#fff\.36\) {
+  border-color: rgba(255,255,255,.36);
+}
+.Bdc\(\#fff\.5\) {
+  border-color: rgba(255,255,255,.5);
+}
 .Bdbc\(\#000\.12\) {
   border-bottom-color: rgba(0,0,0,.12);
+}
+.Bdrs\(4px\) {
+  border-radius: 4px;
+}
+.Bgc\(\#000\)\:h:hover {
+  background-color: #000;
+}
+.Bgc\(\#000\.12\) {
+  background-color: rgba(0,0,0,.12);
 }
 .Bgc\(\#000\.12\)\:h:hover {
   background-color: rgba(0,0,0,.12);
 }
+.Bgc\(\#000\.5\) {
+  background-color: rgba(0,0,0,.5);
+}
+.Bgc\(\#000\.6\) {
+  background-color: rgba(0,0,0,.6);
+}
+.Bgc\(\#000\.8\) {
+  background-color: rgba(0,0,0,.8);
+}
+.Bgc\(\#000\.83\) {
+  background-color: rgba(0,0,0,.83);
+}
+.Bgc\(\#009688\)\:h:hover {
+  background-color: #009688;
+}
+.Bgc\(\#009688\.8\) {
+  background-color: rgba(0,150,136,.8);
+}
+.Bgc\(\#009688\.83\) {
+  background-color: rgba(0,150,136,.83);
+}
+.Bgc\(\#009688\.9\) {
+  background-color: rgba(0,150,136,.9);
+}
+.Bgc\(\#2196f3\)\:h:hover {
+  background-color: #2196f3;
+}
+.Bgc\(\#2196f3\.8\) {
+  background-color: rgba(33,150,243,.8);
+}
+.Bgc\(\#2196f3\.83\) {
+  background-color: rgba(33,150,243,.83);
+}
+.Bgc\(\#2196f3\.9\) {
+  background-color: rgba(33,150,243,.9);
+}
 .Bgc\(\#263238\) {
   background-color: #263238;
+}
+.Bgc\(\#673ab7\)\:h:hover {
+  background-color: #673ab7;
+}
+.Bgc\(\#673ab7\.8\) {
+  background-color: rgba(103,58,183,.8);
+}
+.Bgc\(\#673ab7\.83\) {
+  background-color: rgba(103,58,183,.83);
+}
+.Bgc\(\#673ab7\.9\) {
+  background-color: rgba(103,58,183,.9);
 }
 .Bgz\(cv\) {
   background-size: cover;
@@ -28,8 +100,26 @@
 .D\(f\) {
   display: flex;
 }
+.D\(ib\) {
+  display: inline-block;
+}
 .Flx\(1\) {
   flex: 1;
+}
+.Ai\(c\) {
+  align-items: center;
+}
+.Jc\(c\) {
+  justify-content: center;
+}
+.Ff\(c\) {
+  font-family: "Monotype Corsiva", "Comic Sans MS", cursive;
+}
+.Ff\(m\) {
+  font-family: Monaco, "Courier New", monospace;
+}
+.Ff\(ss\) {
+  font-family: Helvetica, Arial, sans-serif;
 }
 .Fw\(500\) {
   font-weight: 500;
@@ -43,8 +133,23 @@
 .Fz\(\.9rem\) {
   font-size: .9rem;
 }
+.Fz\(1\.1rem\) {
+  font-size: 1.1rem;
+}
 .Fz\(1\.2rem\) {
   font-size: 1.2rem;
+}
+.Fz\(1\.6rem\) {
+  font-size: 1.6rem;
+}
+.Fz\(2\.4rem\) {
+  font-size: 2.4rem;
+}
+.Fz\(2rem\) {
+  font-size: 2rem;
+}
+.Fz\(3rem\) {
+  font-size: 3rem;
 }
 .Fs\(i\) {
   font-style: italic;
@@ -58,8 +163,14 @@
 .H\(100vh\) {
   height: 100vh;
 }
+.H\(150px\) {
+  height: 150px;
+}
 .H\(300px\) {
   height: 300px;
+}
+.H\(75px\) {
+  height: 75px;
 }
 .List\(n\) {
   list-style-type: none;
@@ -74,14 +185,56 @@
 .Mb\(-1px\) {
   margin-bottom: -1px;
 }
+.Mb\(20px\) {
+  margin-bottom: 20px;
+}
 .Maw\(400px\) {
   max-width: 400px;
 }
 .Maw\(600px\) {
   max-width: 600px;
 }
+.T\(0\) {
+  top: 0;
+}
+.T\(200px\) {
+  top: 200px;
+}
+.T\(25\%\) {
+  top: 25%;
+}
+.T\(32\.5px\) {
+  top: 32.5px;
+}
+.T\(35\.5px\) {
+  top: 35.5px;
+}
+.T\(400px\) {
+  top: 400px;
+}
+.T\(50\%\) {
+  top: 50%;
+}
+.T\(75px\) {
+  top: 75px;
+}
+.B\(0\) {
+  bottom: 0;
+}
+.Start\(0\) {
+  left: 0;
+}
+.Start\(25\%\) {
+  left: 25%;
+}
+.Start\(50\%\) {
+  left: 50%;
+}
 .P\(0\) {
   padding: 0;
+}
+.P\(10px\) {
+  padding: 10px;
 }
 .P\(20px\) {
   padding: 20px;
@@ -98,25 +251,76 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
+.Pos\(a\), .StretchedBox {
+  position: absolute;
+}
+.Pos\(r\) {
+  position: relative;
+}
 .Ta\(c\) {
   text-align: center;
 }
 .Td\(n\) {
   text-decoration: none;
 }
+.Tt\(u\) {
+  text-transform: uppercase;
+}
 .Trsdu\(\.3s\) {
   transition-duration: .3s;
+}
+.Va\(m\) {
+  vertical-align: middle;
+}
+.V\(h\) {
+  visibility: hidden;
+}
+.W\(0\) {
+  width: 0;
 }
 .W\(100\%\) {
   width: 100%;
 }
+.W\(100px\) {
+  width: 100px;
+}
+.W\(200px\) {
+  width: 200px;
+}
 .W\(400px\) {
   width: 400px;
+}
+.Z\(1\) {
+  z-index: 1;
+}
+.Z\(10\) {
+  z-index: 10;
+}
+.Z\(11\) {
+  z-index: 11;
+}
+.Z\(12\) {
+  z-index: 12;
 }
 .BdB {
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 1px;
   border-left-width: 0;
-  border-style: solid;
+}
+.Hidden {
+  position: absolute !important;
+  *clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.StretchedBox {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

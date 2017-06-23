@@ -27,6 +27,10 @@ const nav = [
   {
     name: 'Image lazyload when in viewport',
     url: '/image-lazy-load-when-in-viewport'
+  },
+  {
+    name: 'Stacking context',
+    url: '/stacking-context'
   }
 ];
 
