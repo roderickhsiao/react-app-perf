@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import AspectRatio from './AspectRatio';
 import BackgroundImage from './BackgroundImage';
 import BlockingAssets from './BlockingAssets';
+import CenterAlign from './CenterAlign';
 import Home from './Home';
 import LazyloadWhenInViewport from './LazyloadWhenInViewport';
 import LazyloadWithEmptyImage from './LazyloadWithEmptyImage';
@@ -31,6 +32,7 @@ class Main extends Component {
           component={LazyloadWhenInViewport}
         />
         <Route path="/stacking-context" component={StackingContext} />
+        <Route path="/center-align" component={CenterAlign} />
       </div>
     );
   }

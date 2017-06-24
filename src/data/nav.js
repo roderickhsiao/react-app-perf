@@ -31,6 +31,10 @@ const nav = [
   {
     name: 'Stacking context',
     url: '/stacking-context'
+  },
+  {
+    name: 'Center align',
+    url: '/center-align'
   }
 ];
 
