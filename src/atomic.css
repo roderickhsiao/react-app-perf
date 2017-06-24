@@ -52,9 +52,6 @@
 .Bgc\(\#673ab7\.83\) {
   background-color: rgba(103,58,183,.83);
 }
-.Bgc\(\#fff\) {
-  background-color: #fff;
-}
 .Bgc\(\#fff\)\:h:hover {
   background-color: #fff;
 }
@@ -87,6 +84,12 @@
 }
 .D\(ib\) {
   display: inline-block;
+}
+.D\(tb\) {
+  display: table;
+}
+.D\(tbc\) {
+  display: table-cell;
 }
 .Flx\(1\) {
   flex: 1;
@@ -151,6 +154,9 @@
 .List\(n\) {
   list-style-type: none;
 }
+.Lh\(300px\) {
+  line-height: 300px;
+}
 .M\(0\) {
   margin: 0;
 }
@@ -158,14 +164,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.My\(20px\) {
-  margin-top: 20px;
-}
-.My\(20px\), .Mb\(20px\) {
-  margin-bottom: 20px;
-}
 .Mb\(-1px\) {
   margin-bottom: -1px;
+}
+.Mb\(20px\) {
+  margin-bottom: 20px;
 }
 .Maw\(400px\) {
   max-width: 400px;
@@ -235,9 +238,6 @@
 }
 .Translate\(-50\%\,-50\%\) {
   transform: translate(-50%,-50%);
-}
-.Translate\(-50\,-50\%\) {
-  transform: translate(-50,-50%);
 }
 .Trsdu\(\.3s\) {
   transition-duration: .3s;

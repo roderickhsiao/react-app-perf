@@ -14,6 +14,14 @@ class CenterAlign extends Component {
             title="Different approches of CSS vertical align"
             content={[
               <div className="BdB Bdbc(#000.12) Pb(20px)">
+                <h2>Using table and table-cell</h2>
+                <div className="Bd Bdc(#000.12) W(400px) H(300px) Bgc(#2196f3.83) D(tb)">
+                  <div className="Bd Bdc(#000.12) Bgc(#fff.83) Bgc(#fff):h Bdrs(4px) C(#000.83) P(20px) D(tbc) Va(m) Ta(c)">
+                    I am centered 🙂 (not quite)
+                  </div>
+                </div>
+              </div>,
+              <div className="BdB Bdbc(#000.12) Pb(20px)">
                 <h2>Using transform</h2>
                 <div className="Bd Bdc(#000.12) W(400px) H(300px) Pos(r) Ta(c) Bgc(#2196f3.83)">
                   <div className="Bd Bdc(#000.12) Bgc(#fff.83) Bgc(#fff):h Bdrs(4px) C(#000.83) P(20px) T(50%)  Start(50%) Pos(a) Translate(-50%,-50%)">
