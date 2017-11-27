@@ -17,6 +17,10 @@ const nav = [
     url: '/image-aspect-ratio'
   },
   {
+    name: 'Image tag with aspect ratio and flex parent',
+    url: '/image-aspect-ratio-flex-parent'
+  },
+  {
     name: 'Image lazyload with pixel image',
     url: '/image-lazy-load-with-pixel-imge'
   },

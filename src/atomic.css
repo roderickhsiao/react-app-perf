@@ -94,6 +94,9 @@
 .Flx\(1\) {
   flex: 1;
 }
+.Flxb\(1\/2\) {
+  flex-basis: 50%;
+}
 .Ai\(c\) {
   align-items: center;
 }
@@ -154,9 +157,6 @@
 .List\(n\) {
   list-style-type: none;
 }
-.Lh\(300px\) {
-  line-height: 300px;
-}
 .M\(0\) {
   margin: 0;
 }
@@ -215,10 +215,7 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.Py\(20px\) {
-  padding-top: 20px;
-}
-.Py\(20px\), .Pb\(20px\) {
+.Pb\(20px\) {
   padding-bottom: 20px;
 }
 .Pos\(a\), .StretchedBox {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 import AspectRatio from './AspectRatio';
+import AspectRatioFlexParent from './AspectRatioWithFlexParent';
 import BackgroundImage from './BackgroundImage';
 import BlockingAssets from './BlockingAssets';
 import CenterAlign from './CenterAlign';
@@ -19,6 +20,7 @@ class Main extends Component {
         <Route path="/image-tag" component={BlockingAssets} />
         <Route path="/background-image" component={BackgroundImage} />
         <Route path="/image-aspect-ratio" component={AspectRatio} />
+        <Route path="/image-aspect-ratio-flex-parent" component={AspectRatioFlexParent} />
         <Route
           path="/image-lazy-load-with-pixel-imge"
           component={LazyloadWithPixelImage}
