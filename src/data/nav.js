@@ -39,6 +39,10 @@ const nav = [
   {
     name: 'Center align',
     url: '/center-align'
+  },
+  {
+    name: 'Gif and Video',
+    url: '/gif-video'
   }
 ];
 

@@ -11,6 +11,7 @@ import LazyloadWhenInViewport from './LazyloadWhenInViewport';
 import LazyloadWithEmptyImage from './LazyloadWithEmptyImage';
 import LazyloadWithPixelImage from './LazyloadWithPixelImage';
 import StackingContext from './StackingContext';
+import MultipleInlineVideo from './MultipleInlineVideo';
 
 class Main extends Component {
   render() {
@@ -35,6 +36,7 @@ class Main extends Component {
         />
         <Route path="/stacking-context" component={StackingContext} />
         <Route path="/center-align" component={CenterAlign} />
+        <Route path="/gif-video" component={MultipleInlineVideo} />
       </div>
     );
   }
