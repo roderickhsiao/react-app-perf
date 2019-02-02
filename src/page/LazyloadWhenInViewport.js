@@ -63,10 +63,9 @@ class LazyloadWithEmptyImage extends Component {
               <div className="Maw(400px)">
                 <LazyObject
                   aspectRatioProps={{
-                    ratio: '4/3',
                     alt: 'puppy'
                   }}
-                  src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s1080x1080/e15/fr/18809583_812711995553463_3365235085484752896_n.jpg"
+                  src="https://scontent-sjc3-1.cdninstagram.com/vp/37f6e0b0cfe9d5553c695ca7c690f70a/5CFD8F2B/t51.2885-15/e35/45655263_495793294244515_3817527841468867835_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com"
                 />
               </div>
             ]}
